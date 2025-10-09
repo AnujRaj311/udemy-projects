@@ -1,0 +1,80 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: antiquewhite;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn {
+    background-color: #008CBA;
+    color: white;
+    width: 150px;
+    height: 50px;
+    font-size: 20px;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.btn:hover {
+    letter-spacing: 0.1rem;
+}
+
+.popup {
+    background-color: white;
+    width: 400px;
+    height: 400px;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    gap: 16px;
+    align-items: center;
+    justify-content: center;
+}
+
+.fa-solid {
+    align-self: flex-end;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.heading {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.description {
+    font-size: medium;
+    text-align: center;
+}
+
+.email {
+    width: 236px;
+    padding: 8px;
+    margin-top: 20px;
+    height: 45px;
+}
+
+.btn-signup {
+    background-color: #2446c3;
+    color: white;
+    width: 150px;
+    height: 50px;
+    font-size: 20px;
+    border-radius: 12px;
+    cursor: pointer;
+
+}
+
+.hidden {
+    display: none;
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Changer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="card">
+        <h2 class="heading">Change the CSS of below Image! With the help of the Sliders</h2>
+        <h2 class="language">JavaScript</h2>
+        <section class="css-changer">
+            <div class="color-changer">
+                <label for="color">Base Color:</label>
+                <input type="color" class="color" id="color">
+            </div>
+            <div class="width-changer">
+                <label for="width">Width:</label>
+                <input type="range" class="slider" id="width" value="0">
+            </div>
+            <div class="border-radius-changer">
+                <label for="radius">Border Radius:</label>
+                <input type="range" class="slider" id="radius" value="0">
+            </div>
+            <div class="padding-changer">
+                <label for="padding">Padding:</label>
+                <input type="range" class="slider" id="padding" value="0">
+            </div>
+            <div class="blur-changer">
+                <label for="blur">Blur:</label>
+                <input type="range" class="slider" id="blur" value="0">
+            </div>
+        </section>
+        <section class="image-section">
+            <div class="image">
+                <img src="https://images.pexels.com/photos/1955134/pexels-photo-1955134.jpeg" alt="road-image" class="road-image">
+            </div>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
