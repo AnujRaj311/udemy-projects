@@ -1,0 +1,60 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    background-color: #1B3C53;
+    min-height: 100vh;
+    padding: 32px;
+}
+
+.main {
+    display: flex;
+    gap: 16px;
+}
+
+.editor-part {
+    display: flex;
+    flex-direction: column;
+    gap: 54px;
+    width: 50%;
+}
+
+.output-part {
+    width: 50%;
+    height: 95vh;
+}
+
+.html,
+.css,
+.js {
+    height: 28vh;
+}
+
+textarea {
+    width: 100%;
+    height: 100%;
+    resize: none;
+    border: none;
+    background-color: #456882;
+    color: #fff;
+}
+
+.output {
+    background-color: #234C6A;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+textarea:focus,
+textarea:active {
+  outline: none;
+  border: none;
+}
+
+h2 {
+    background-color: #FBF3D1;
+
+}
