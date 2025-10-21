@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="main">
+        <h1>Create Account</h1>
+        <form id="form" class="form">
+        <div class="form-element">
+            <label for="username" class="username">Username</label>
+            <input type="text" name="username" id="username" placeholder="Enter your name">
+            <p class="error"></p>
+        </div>
+        <div class="form-element">
+            <label for="email" class="email">Email</label>
+            <input type="text" name="email" id="email"  placeholder="Enter your email">
+            <p class="error"></p>
+        </div>
+        <div class="form-element"> 
+            <label for="password" class="password">Password</label>
+            <input type="password" name="password" id="password"  placeholder="Enter your password">
+            <p class="error"></p>
+        </div>
+        <div class="form-element">
+            <label for="passcheck" class="passcheck">Password Check</label>
+            <input type="password" name="passcheck" id="passcheck"  placeholder="Confirm your password">
+            <p class="error"></p>
+        </div>
+
+        <button type="submit" class="btn">Submit</button>
+
+    </form>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
