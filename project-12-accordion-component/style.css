@@ -1,0 +1,75 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: linear-gradient( 135deg, #72EDF2 10%, #5151E5 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    font-family: sans-serif;
+}
+
+.container {
+    width: 30%;
+    background-color: #F7F4EA;
+    padding: 24px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+    text-align: center;
+    color: orangered;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    padding-bottom: 2rem;
+}
+
+.container .accordion {
+    margin: 10px 0;
+    overflow: hidden;
+    transition: height 0.5s padding 0.3s;
+}
+
+h2 {
+    padding: 15px;
+    background-image: linear-gradient( 135deg, #FD6E6A 10%, #FFC600 100%);
+    color: #fff;
+    border-radius: 6px 6px 0 0;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.container .accordion h2::before {
+    content: "+";
+    float: right;
+    font-weight: 800;
+    transition: transform 0.3s;
+}
+
+.container .accordion.active h2::before {
+    content: "-";
+    float: right;
+    font-weight: 800;
+    transform: rotate(180deg);
+}
+
+.container .accordion .description {
+    height: 0;
+    background-color: #fff;
+    transition: height 0.3s padding 0.3s;
+    overflow: hidden;
+    border-radius: 0 0 6px 6px;
+}
+
+.container .accordion.active .description{
+    padding: 10px;
+    height: auto;
+}
+
+.container .accordion.active h2{
+    background-image: linear-gradient( 135deg,#FFC600 10%, #FD6E6A 100%);
+}
